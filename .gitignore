@@ -1,0 +1,16 @@
+/node_modules
+
+/build
+/dist
+
+.DS_Store
+
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+ui/.idea/
+
+.vscode/
