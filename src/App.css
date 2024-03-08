@@ -1,0 +1,10 @@
+.App-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; 
+  background-image: url(../src/Images/Фон.png); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
