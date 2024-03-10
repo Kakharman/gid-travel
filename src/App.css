@@ -1,10 +1,1973 @@
-.App-header {
+@font-face {
+  font-family: 'Golos-text-bold';
+  src: url(/src/assets/fonts/Golos_Text/static/GolosText-Bold.ttf)
+}
+@font-face {
+  font-family: 'Golos-text-regular';
+  src: url(/src/assets/fonts/Golos_Text/static/GolosText-Regular.ttf)
+}
+
+@media (min-width: 1024px) {
+  
+
+.header {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
-  height: 70vh; 
-  background-image: url(../src/assets/images/Фон.png); 
+  position: relative; 
+  height: 70vh;
+  background-image: url(../src/assets/images/Фон.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.App-logo {
+  height: 80px;
+  width: 280px;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  position: absolute;
+  top: 100px; 
+  right: 200px; 
+  display: inline-block;
+  border: 1px solid #4348BD;
+  border-radius: 6px;
+  padding: 4px;
+  transition: background-color 0.6s;
+}
+
+.bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 8px 8px; 
+  background-color: #4348BD;
+  transition: background-color 0.6s;
+}
+
+.hamburger-menu:hover .bar {
+  background-color: #ffffff; 
+}
+
+.hamburger-menu:hover {
+  background-color: #4348BD; 
+}
+
+.logo-text{
+  font-size: 103px;
+  color: #000000;
+}
+.gid-text{
+  color: #4348BD;
+}
+.search-panel{
+  width: 700px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.brand-message{
+  font-size: 26px;
+}
+.banner{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Golos-text-bold';
+}
+.search-panel{
+  margin-top: 100px;
+}
+.search-panel {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  height: 50px;
+  width: 273px;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.search-button {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 30px;
+  background-color: #4348BD;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #5869cb;
+}
+.input-service, .input-country  {
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+      background-image: url('../src/assets/images/mark.png'); 
+  background-position: right 10px center; 
+  background-repeat: no-repeat; 
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.input-service::-ms-expand {
+  display: none;
+}
+.mark{
+  height: 17px;
+  width: 17px;
+  margin-right: 10px;
+}
+.main-text-guides{
+  font-family: 'Golos-text-bold';
+  font-size: 37px;
+}
+.popular-guides{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.guides{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  height: 290px;
+  
+  margin: 0 auto;
+}
+.location-container {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+.location-img {
+  width: 20px; 
+  height: 20px; 
+  margin-right: 5px; 
+  align-items: center;
+}
+
+.guide-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.guides h2 {
+  font-family: 'Golos-text-regular';
+  font-size: 22px;
+  margin-bottom: 10px; 
+}
+
+.guides p {
+  font-family: 'Golos-text-regular';
+  font-size: 12px;
+  color: #7E7E7E;
+  margin: 0;
+}
+
+.avatar {
+  width: 100px; 
+  height: 100px; 
+}
+.place-photo{
+  width: 220px;
+  height: 200px;
+  border-radius: 15px;
+}
+.place-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-family: 'Golos-text-regular';
+  font-size: 13px;
+  width: 25%;
+  flex-basis: calc(25% - 20px);
+}
+
+.places-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 73%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.place-item h2{
+  font-size: 15px;
+}
+.place-info{
+  margin-top: 15px;
+}
+.strong-price {
+  font-weight: 800; 
+}
+
+.place-item h2, .place-item p {
+  margin: 5px 0;
+}
+
+.strong-price {
+  font-weight: 800;
+}
+.main-content{
+  background-image: url(../src/assets/images/Фон10.png);
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.all-info{
+  height:300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.main-text-places{
+  font-family: 'Golos-text-bold';
+  font-size: 37px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-card{
+  height: 160px;
+  width: 100%;
+  background-color: rgba(71, 108, 94, 0.05);
+  border-radius: 15px;
+  position: relative;
+  margin: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+ .cards-box{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.circle{
+  background-color: rgba(67, 72, 189, 1);
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-bottom: 150px;
+}
+
+.circle:hover {
+  transform: translate(-50%, calc(-50% - 5px)); 
+}
+
+.team-img{
+  height: 40px;
+  width: 40px;
+}
+.highlighted-words{
+  color: rgba(67, 72, 189, 1);
+  margin-right: 4px;
+}
+.info-cards-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  flex-wrap: wrap;
+  width: 95%; 
+  padding-top: 30px;
+}
+.comment-img, .book-img{
+  height: 30px;
+  width: 30px;
+  padding-left: 3px;
+}
+.circle {
+  transition: transform 0.3s ease; 
+}
+.circle:hover {
+  transform: translateY(-5px);
+}
+
+.footer{
+  width: 100%;
+  height: 250px;
+  background-color: rgba(30, 38, 35, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.patners{
+  color: #ffffff;
+  flex: 1; 
+}
+.patners, .user-mail, .links {
+  flex: 1; 
+  margin: 0 30px; 
+  
+}
+.bag-img{
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+}
+.home-img{
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.traveler-img{
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+}
+.inside-area{
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.heading span{
+  font-size: 22px;
+}
+.heading{
+  display: flex;
+ 
+}
+.user-navigation{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-family: 'Golos-text-regular';
+  font-size: 14px;
+}
+.user-navigation span{
+  margin-top: 10px;
+}
+
+.text-span span {
+  transition: color 0.3s ease; 
+}
+
+.text-span:hover {
+  color: orange;
+  cursor: pointer;
+}
+.phone-num, .email{
+  font-size: 12px;
+  color: #7E7E7E;
+}
+.user-mail{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  color: #ffffff;
+  font-size: 14px;
+}
+.user-mail span{
+  margin-top: 10px;
+}
+.link-cirle-instagram{
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 100%;
+
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+.link-cirle-whatsapp{
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 100%;
+
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+.link-cirle-facebook{
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 700;
+  z-index: 3;
+}
+
+.link-cirle-instagram, .link-cirle-facebook, .link-cirle-whatsapp {
+  transition: background-color 0.3s ease; 
+
+}
+
+.instagram:hover {
+  background-color: #E1306C;
+}
+
+.facebook:hover {
+  background-color: #3b5998; 
+  color: #ffffff;
+}
+
+.whatsapp:hover {
+  background-color: #25D366; 
+}
+.link-cirle-facebook span{
+  margin-top: 10px;
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+  padding: 20px;
+}
+.link-icon{
+  height: 20px;
+  width: 20px;
+}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+.header {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  position: relative; 
+  height: 70vh;
+  background-image: url(../src/assets/images/Фон.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App-logo {
+  height: 80px;
+  width: 280px;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  position: absolute;
+  top: 100px; 
+  right: 200px; 
+  display: inline-block;
+  border: 1px solid #4348BD;
+  border-radius: 6px;
+  padding: 4px;
+  transition: background-color 0.6s;
+}
+
+.bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 8px 8px; 
+  background-color: #4348BD;
+  transition: background-color 0.6s;
+}
+
+.hamburger-menu:hover .bar {
+  background-color: #ffffff; 
+}
+
+.hamburger-menu:hover {
+  background-color: #4348BD; 
+}
+
+.logo-text{
+  font-size: 103px;
+  color: #000000;
+}
+.gid-text{
+  color: #4348BD;
+}
+.search-panel{
+  width: 700px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.brand-message{
+  font-size: 26px;
+}
+.banner{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Golos-text-bold';
+}
+.search-panel{
+  margin-top: 100px;
+}
+.search-panel {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  height: 50px;
+  width: 273px;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.search-button {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 30px;
+  background-color: #4348BD;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #5869cb;
+}
+.input-service, .input-country  {
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  background-image: url('../src/assets/images/mark.png'); 
+  background-position: right 10px center; 
+  background-repeat: no-repeat; 
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.input-service::-ms-expand {
+  display: none;
+}
+.mark{
+  height: 17px;
+  width: 17px;
+  margin-right: 10px;
+}
+.main-text-guides{
+  font-family: 'Golos-text-bold';
+  font-size: 37px;
+}
+.main-text-places{
+  font-family: 'Golos-text-bold';
+  font-size: 37px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 530px;
+}
+.popular-guides{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.popular-places{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.guides{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: 290px;
+  margin: 0 auto;
+  flex-wrap: wrap; 
+  gap: 20px;
+}
+.location-container {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+.location-img {
+  width: 20px; 
+  height: 20px; 
+  margin-right: 5px; 
+  align-items: center;
+}
+
+.guide-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 40%; 
+}
+.guides h2 {
+  font-family: 'Golos-text-regular';
+  font-size: 22px;
+  margin-bottom: 10px; 
+}
+
+.guides p {
+  font-family: 'Golos-text-regular';
+  font-size: 12px;
+  color: #7E7E7E;
+  margin: 0;
+}
+
+
+.avatar {
+  width: 100px; 
+  height: 100px; 
+}
+.place-photo{
+  width: 220px;
+  height: 200px;
+  border-radius: 15px;
+}
+.place-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-family: 'Golos-text-regular';
+  font-size: 13px;
+  width: 25%;
+  flex-basis: calc(50% - 20px);
+}
+
+.places-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 73%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.place-item h2{
+  font-size: 15px;
+}
+.place-info{
+  margin-top: 15px;
+}
+.strong-price {
+  font-weight: 800; 
+}
+
+.place-item h2, .place-item p {
+  margin: 5px 0;
+}
+
+.strong-price {
+  font-weight: 800;
+}
+.main-content{
+  background-image: url(../src/assets/images/Фон10.png);
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.all-info{
+  height:300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.info-card{
+  height: 160px;
+  width: 100%;
+  background-color: rgba(71, 108, 94, 0.05);
+  border-radius: 15px;
+  position: relative;
+  margin: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+ .cards-box{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.circle{
+  background-color: rgba(67, 72, 189, 1);
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-bottom: 150px;
+}
+
+.circle:hover {
+  transform: translate(-50%, calc(-50% - 5px)); 
+}
+
+.team-img{
+  height: 40px;
+  width: 40px;
+}
+.highlighted-words{
+  color: rgba(67, 72, 189, 1);
+  margin-right: 4px;
+}
+.info-cards-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  flex-wrap: wrap;
+  width: 95%; 
+  padding-top: 30px;
+}
+.comment-img, .book-img{
+  height: 30px;
+  width: 30px;
+  padding-left: 3px;
+}
+.circle {
+  transition: transform 0.3s ease; 
+}
+.circle:hover {
+  transform: translateY(-5px);
+}
+
+.footer{
+  width: 100%;
+  height: auto;
+  background-color: rgba(30, 38, 35, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.patners{
+  color: #ffffff;
+  flex: 1; 
+  min-width: 250px;
+}
+.patners, .user-mail, .links {
+  flex: 1; 
+  margin: 0 30px; 
+  
+}
+.bag-img{
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+}
+.home-img{
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.traveler-img{
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+}
+.inside-area{
+  width: 80%;
+  height: auto;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.heading span{
+  font-size: 22px;
+}
+.heading{
+  display: flex;
+  flex-direction: row;
+}
+.user-navigation{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-family: 'Golos-text-regular';
+  font-size: 14px;
+  
+}
+.user-navigation span{
+  margin-top: 10px;
+}
+
+.text-span span {
+  transition: color 0.3s ease; 
+}
+
+.text-span:hover {
+  color: orange;
+  cursor: pointer;
+}
+.phone-num, .email{
+  font-size: 12px;
+  color: #7E7E7E;
+}
+.user-mail{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  color: #ffffff;
+  font-size: 14px;
+}
+.user-mail span{
+  margin-top: 10px;
+}
+.link-cirle-instagram{
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 100%;
+  margin-right: 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  transition: background-color 0.3s ease; 
+  font-weight: 700;
+}
+.link-cirle-whatsapp{
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 100%;
+  margin-right: 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 700;
+  transition: background-color 0.3s ease; 
+}
+.link-cirle-facebook{
+  margin-right: 0;
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 700;
+  transition: background-color 0.3s ease; 
+}
+
+.instagram:hover {
+  background-color: #E1306C; 
+}
+
+.facebook:hover {
+  background-color: #3b5998; 
+  color: #ffffff;
+}
+
+.whatsapp:hover {
+  background-color: #25D366; 
+}
+.link-cirle-facebook span{
+  margin-top: 10px;
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+  padding: 20px; 
+}
+.link-icon{
+  height: 24px; 
+  width: 24px;
+}
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative; 
+    height: 50vh; 
+    background-image: url(../src/assets/images/Фон.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .App-logo {
+    height: 60px; 
+    width: 210px;
+  }
+  
+  .hamburger-menu {
+    cursor: pointer;
+    position: absolute;
+    top: 20px; 
+    right: 30px;
+    display: inline-block;
+    border: 1px solid #4348BD;
+    border-radius: 6px;
+    padding: 4px;
+    transition: background-color 0.6s;
+  }
+  
+  .bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin: 8px 8px; 
+    background-color: #4348BD;
+    transition: background-color 0.6s;
+  }
+  
+  .hamburger-menu:hover .bar {
+    background-color: #ffffff; 
+  }
+  
+  .hamburger-menu:hover {
+    background-color: #4348BD; 
+  }
+  
+  .logo-text{
+    font-size: 70px;
+    color: #000000;
+    
+  }
+  .gid-text{
+    color: #4348BD;
+  }
+  .search-panel{
+    width: 70%; 
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    flex-grow: 1; 
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .brand-message{
+    font-size: 26px;
+  }
+  .banner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Golos-text-bold';
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  
+  .input {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    height: 50px;
+    width: 273px;
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 10px;
+    flex-grow: 1; 
+  }
+  
+  .search-button {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+    background-color: #4348BD;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #5869cb;
+  }
+  .input-service, .input-country  {
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background-image: url('../src/assets/images/mark.png'); 
+    background-position: right 10px center; 
+    background-repeat: no-repeat; 
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .input-service::-ms-expand {
+    display: none;
+  }
+  .mark{
+    height: 17px;
+    width: 17px;
+    margin-right: 10px;
+  }
+  .main-text-guides{
+    font-family: 'Golos-text-bold';
+    font-size: 27px;
+  }
+  .main-text-places{
+    font-family: 'Golos-text-bold';
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 530px;
+  }
+  .popular-guides{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .popular-places{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .guides{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: 790px;
+  margin: 0 auto;
+  flex-wrap: wrap; 
+  gap: 20px;
+  }
+  .location-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-direction: row;
+  }
+  .location-img {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px; 
+    align-items: center;
+  }
+  
+  .guide-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    flex-basis: 120%;
+  }
+  .guides h2 {
+    font-family: 'Golos-text-regular';
+    font-size: 16px;
+    margin-bottom: 10px; 
+  }
+  
+  .guides p {
+    font-family: 'Golos-text-regular';
+    font-size: 10px;
+    color: #7E7E7E;
+    margin: 0;
+  
+  }
+  .avatar {
+    width: 100px; 
+    height: 100px; 
+  }
+  .place-photo{
+    width: 220px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .place-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: 'Golos-text-regular';
+    font-size: 13px;
+    width: 25%;
+
+    flex-basis: 100%;
+  }
+  
+  .places-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 73%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+  }
+  
+  .place-item h2{
+    font-size: 15px;
+  }
+  .place-info{
+    margin-top: 15px;
+  }
+  .strong-price {
+    font-weight: 800; 
+  }
+  
+  .place-item h2, .place-item p {
+    margin: 5px 0;
+  }
+  
+  .strong-price {
+    font-weight: 800;
+  }
+  .main-content{
+    background-image: url(../src/assets/images/Фон10.png);
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .all-info{
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  
+  }
+  .info-card{
+    height: 300px;
+    width: 70%;
+    background-color: rgba(71, 108, 94, 0.05);
+    border-radius: 15px;
+    position: relative;
+    margin: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+   .cards-box{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+  .circle{
+    background-color: rgba(67, 72, 189, 1);
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-bottom: 100px;
+  }
+  
+  .circle:hover {
+    transform: translate(-50%, calc(-50% - 5px)); 
+  }
+  
+  .team-img{
+    height: 40px;
+    width: 40px;
+  }
+  .highlighted-words{
+    color: rgba(67, 72, 189, 1);
+    margin-right: 4px;
+  }
+  .info-cards-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex-wrap: wrap;
+    width: 95%; 
+    padding-top: 30px;
+    flex-direction: column;
+    height: 60px;
+    
+  }
+  .comment-img, .book-img{
+    height: 30px;
+    width: 30px;
+    padding-left: 3px;
+  }
+  .circle {
+    transition: transform 0.3s ease; 
+  }
+  .circle:hover {
+    transform: translateY(-5px);
+  }
+  
+  .footer{
+    width: 100%;
+    height: auto;
+    background-color: rgba(30, 38, 35, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .patners{
+    color: #ffffff;
+    flex: 1; 
+    min-width: 250px;
+    text-align: center;
+  }
+  .patners, .user-mail, .links {
+    margin: 0 10px; 
+    flex-basis: 100%;
+    
+  }
+  .bag-img{
+    height: 22px;
+    width: 22px;
+    margin-right: 10px;
+  }
+  .home-img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  .traveler-img{
+    height: 22px;
+    width: 22px;
+    margin-right: 10px;
+  }
+  .inside-area{
+    width: 80%;
+    height: auto;
+    flex-direction: column; 
+    gap: 10px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  .heading span{
+    font-size: 22px;
+    
+  }
+  .heading{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    min-width: 250px;
+    align-items: center;
+    justify-content: center;
+  }
+  .user-navigation{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: 'Golos-text-regular';
+    font-size: 14px;
+    
+  }
+  .user-navigation span{
+    margin-top: 10px;
+  }
+  
+  .text-span span {
+    transition: color 0.3s ease; 
+  }
+  
+  .text-span:hover {
+    color: orange;
+    cursor: pointer;
+  }
+  .phone-num, .email{
+    font-size: 12px;
+    color: #7E7E7E;
+  }
+  .user-mail{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    color: #ffffff;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .user-mail span{
+    margin-top: 10px;
+  }
+  .link-cirle-instagram{
+    height: 32px;
+    width: 32px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 100%;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    transition: background-color 0.3s ease; 
+    font-weight: 700;
+  }
+  .link-cirle-whatsapp{
+    height: 32px;
+    width: 32px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 100%;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 700;
+    transition: background-color 0.3s ease; 
+  }
+  .link-cirle-facebook{
+    margin-right: 0;
+    height: 32px;
+    width: 32px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 700;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .instagram:hover {
+    background-color: #E1306C; 
+  }
+  
+  .facebook:hover {
+    background-color: #3b5998; 
+    color: #ffffff;
+  }
+  
+  .whatsapp:hover {
+    background-color: #25D366; 
+  }
+  .link-cirle-facebook span{
+    margin-top: 10px;
+  }
+  .links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    padding: 20px; 
+  }
+  .link-icon{
+    height: 24px; 
+    width: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative; 
+    height: 70vh; 
+    background-image: url(../src/assets/images/Фон.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .App-logo {
+    height: 60px; 
+    width: 210px;
+  }
+  
+  .hamburger-menu {
+    cursor: pointer;
+    position: absolute;
+    top: 40px; 
+    right: 90px;
+    display: inline-block;
+    border: 1px solid #4348BD;
+    border-radius: 6px;
+    padding: 4px;
+    transition: background-color 0.6s;
+  }
+  
+  .bar {
+    display: block;
+    width: 12px;
+    height: 2px;
+    margin: 8px 15px; 
+    background-color: #4348BD;
+    transition: background-color 0.6s;
+  }
+  
+  .hamburger-menu:hover .bar {
+    background-color: #ffffff; 
+  }
+  
+  .hamburger-menu:hover {
+    background-color: #4348BD; 
+  }
+  
+  .logo-text{
+    font-size: 30px;
+    color: #000000;
+    
+  }
+  .gid-text{
+    color: #4348BD;
+  }
+  .search-panel{
+    width: 70%; 
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    flex-grow: 1; 
+    gap: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .brand-message{
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Golos-text-bold';
+    width: 100%; 
+    margin-top: 20px;
+  }
+
+  
+  .input {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    height: 50px;
+    width: 173px;
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 10px;
+    flex-grow: 1; 
+   
+  }
+  
+  .search-button {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+    background-color: #4348BD;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #5869cb;
+  }
+  .input-service, .input-country  {
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background-image: url('../src/assets/images/mark.png'); 
+    background-position: right 10px center; 
+    background-repeat: no-repeat; 
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 10px;
+    min-width: 120px;
+  }
+  
+  .input-service::-ms-expand {
+    display: none;
+  }
+  .mark{
+    height: 17px;
+    width: 17px;
+    margin-right: 10px;
+  }
+  .main-text-guides{
+    font-family: 'Golos-text-bold';
+    font-size: 27px;
+  }
+  .main-text-places{
+    font-family: 'Golos-text-bold';
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 530px;
+  }
+  .popular-guides{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .popular-places{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .guides{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: 790px;
+  margin: 0 auto;
+  flex-wrap: wrap; 
+  gap: 20px;
+  }
+  .location-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-direction: row;
+  }
+  .location-img {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px; 
+    align-items: center;
+  }
+  
+  .guide-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    flex-basis: 120%;
+  }
+  .guides h2 {
+    font-family: 'Golos-text-regular';
+    font-size: 16px;
+    margin-bottom: 10px; 
+  }
+  
+  .guides p {
+    font-family: 'Golos-text-regular';
+    font-size: 10px;
+    color: #7E7E7E;
+    margin: 0;
+  
+  }
+  .avatar {
+    width: 100px; 
+    height: 100px; 
+  }
+  .place-photo{
+    width: 220px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .place-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: 'Golos-text-regular';
+    font-size: 13px;
+    width: 25%;
+
+    flex-basis: 100%;
+  }
+  
+  .places-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 73%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+  }
+  
+  .place-item h2{
+    font-size: 15px;
+  }
+  .place-info{
+    margin-top: 15px;
+    width: 180px;
+  }
+  .strong-price {
+    font-weight: 800; 
+  }
+  
+  .place-item h2, .place-item p {
+    margin: 5px 0;
+  }
+  
+  .strong-price {
+    font-weight: 800;
+  }
+  .main-content{
+    background-image: url(../src/assets/images/Фон10.png);
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .all-info{
+    height:800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  
+  }
+  .info-card{
+    height: 300px;
+    width: 70%;
+    background-color: rgba(71, 108, 94, 0.05);
+    border-radius: 15px;
+    position: relative;
+    margin: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+   .cards-box{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+  .circle{
+    background-color: rgba(67, 72, 189, 1);
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-bottom: 200px;
+  }
+  
+  .circle:hover {
+    transform: translate(-50%, calc(-50% - 5px)); 
+  }
+  
+  .team-img{
+    height: 40px;
+    width: 40px;
+  }
+  .highlighted-words{
+    color: rgba(67, 72, 189, 1);
+    margin-right: 4px;
+  }
+  .info-cards-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex-wrap: wrap;
+    width: 95%; 
+    padding-top: 30px;
+    flex-direction: column;
+    height: 160px;
+    
+  }
+  .comment-img, .book-img{
+    height: 30px;
+    width: 30px;
+    padding-left: 3px;
+  }
+  .circle {
+    transition: transform 0.3s ease; 
+  }
+  .circle:hover {
+    transform: translateY(-5px);
+  }
+  
+  .footer{
+    width: 100%;
+    height: auto;
+    background-color: rgba(30, 38, 35, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .patners{
+    color: #ffffff;
+    flex: 1; 
+    min-width: 100px;
+    text-align: center;
+  }
+  .patners, .user-mail, .links {
+    margin: 0 10px; /* Уменьшаем внешние отступы */
+    flex-basis: 100%;
+    
+  }
+  .bag-img{
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+  }
+  .home-img{
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+  }
+  .traveler-img{
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+  }
+  .inside-area{
+    width: 100%;
+    height: auto;
+    flex-direction: column; 
+    gap: 10px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  .heading span{
+    font-size: 16px;
+    
+  }
+  .heading{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    min-width: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  .user-navigation{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: 'Golos-text-regular';
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .user-navigation span{
+    margin-top: 10px;
+  }
+  
+  .text-span span {
+    transition: color 0.3s ease; 
+  }
+  
+  .text-span:hover {
+    color: orange;
+    cursor: pointer;
+  }
+  .phone-num, .email{
+    font-size: 12px;
+    color: #7E7E7E;
+  }
+  .user-mail{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    color: #ffffff;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .user-mail span{
+    margin-top: 10px;
+  }
+  .link-cirle-instagram{
+    height: 32px;
+    width: 32px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 100%;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    transition: background-color 0.3s ease; 
+    font-weight: 700;
+  }
+  .link-cirle-whatsapp{
+    height: 32px;
+    width: 32px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 100%;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 700;
+    transition: background-color 0.3s ease; 
+  }
+  .link-cirle-facebook{
+    margin-right: 0;
+    height: 32px;
+    width: 32px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 700;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .instagram:hover {
+    background-color: #E1306C; 
+  }
+  
+  .facebook:hover {
+    background-color: #3b5998; 
+    color: #ffffff;
+  }
+  
+  .whatsapp:hover {
+    background-color: #25D366; 
+  }
+  .link-cirle-facebook span{
+    margin-top: 10px;
+  }
+  .links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:80%;
+    justify-content: space-around; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    padding: 20px; 
+  }
+  .link-icon{
+    height: 20px; 
+    width: 20px;
+  }
 }

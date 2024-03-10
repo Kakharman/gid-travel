@@ -1,14 +1,15 @@
-
 import React from 'react';
 import './App.css';
-import logo from '../src/Images/logo.png';
+import Header from '../src/components/header';
+import Main from '../src/components/main';
+import Footer from '../src/components/footer'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} alt="logo" className="App-logo" />
-      </header>
+    <div>
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }
